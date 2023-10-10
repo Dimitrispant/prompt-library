@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'data.json'
+  workflow_dispatch:
 
 jobs:
   update_readme:
@@ -26,3 +27,4 @@ jobs:
     - name: Convert JSON to DataFrame and Update README
       run: |
         python .github/scripts/update_readme.py
+
