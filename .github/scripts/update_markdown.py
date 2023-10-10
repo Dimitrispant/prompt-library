@@ -19,7 +19,7 @@ md_table = tabulate(df, headers='keys', tablefmt='pipe', showindex=False)
 print("Markdown Table:", md_table)  # Debug print
 
 # Update README.md
-with open('README.md', 'w') as f:
+with open('Library.md', 'w') as f:
     f.write("# My Prompt Library\n\n")
     f.write(md_table)
 
